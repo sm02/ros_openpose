@@ -24,11 +24,12 @@ Date: 2019/11/23
    the standard openpose command-line arguments are also supported.
    to do so, please change the value, as shown in the example below.
   -->
+  <!--
   <?ignore
     <arg name="openpose_args" value="--hand --disable_multi_thread --model_folder /home/ravi/openpose/models/" />
-  ?>
+  ?>-->
   <!-- full path to the model dir of openpose -->
-  <arg name="openpose_args" value="--model_folder /home/ravi/openpose/models/" />
+  <arg name="openpose_args" value="--model_folder /home/user/openpose/models/" />
 
   <!-- rostopic to publish the 3D skeleton data -->
   <arg name="pub_topic" default="/frame" />
@@ -39,7 +40,7 @@ Date: 2019/11/23
   <!-- size of the text used to indicate the id of a skeleton for visualization inside RViz -->
   <arg name="id_text_size" default="0.2" />
 
-  <!-- offeset of the text used to indicate the id of a skeleton for visualization inside RViz -->
+  <!-- offset of the text used to indicate the id of a skeleton for visualization inside RViz -->
   <arg name="id_text_offset" default="-0.05" />
 
   <!-- flag to enable printing ros message to terminal -->
